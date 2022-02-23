@@ -53,6 +53,7 @@ cp /root/go/bin/ppd /usr/bin/
 ##### 配置生成
 
 ```
+cd /home
 mkdir rsnode
 cd rsnode
 ppd config
