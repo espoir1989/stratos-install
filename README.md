@@ -10,14 +10,14 @@ https://explorer-tropos.thestratos.org/
 https://github.com/stratosnet/sds/wiki/Tropos-Incentive-Testnet
 
 ####  全节点部署
-待补全
 
 #### SDS节点
 
 ##### 一键安装脚本
 
 ```
-待补充
+wget https://raw.githubusercontent.com/espoir1989/stratos-install/main/init.sh
+sh init.sh
 ```
 
 ##### 基础环境安装
