@@ -70,6 +70,10 @@ ppd config -w -p
 #####  修改配置文件
 
 ```
+sed -i "s/http\:\/\/127\.0\.0\.1\:1317/https\:\/\/rest\-tropos\.thestratos\.org/g" configs/config.yaml
+```
+
+```
 vim config/config.conf
 ```
 
