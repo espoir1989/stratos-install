@@ -113,6 +113,7 @@ ppd start
 ```
 
 ##### 后台运行
+screen运行
 ```
 screen -S rsnode
 cd /home/rsnode
@@ -121,8 +122,10 @@ ppd start
 screen -ls 查看后台
 screen -r rsnode 恢复前台
 ```
-后台运行也可以使用nohup，service，docker等方式
-
+重定向运行
+```
+ppd start 2>&1 >> sds.log & 
+```
 service运行
 ```
 wget https://raw.githubusercontent.com/espoir1989/stratos-install/main/sds.service
