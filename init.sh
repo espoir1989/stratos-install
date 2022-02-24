@@ -9,6 +9,9 @@ git clone https://github.com/stratosnet/sds.git
 cd sds
 git checkout v0.5.0
 
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
+
 make build
 make install
 

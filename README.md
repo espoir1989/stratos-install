@@ -26,7 +26,7 @@ sh init.sh
 wget https://go.dev/dl/go1.17.7.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.7.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
-apt install git make gcc -y
+apt install git make gcc vim -y
 ```
 
 ##### 拉取sds代码
@@ -40,6 +40,8 @@ git checkout v0.5.0
 ##### 编译
 
 ```
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
 make build
 make install
 ```
@@ -74,7 +76,7 @@ sed -i "s/http\:\/\/127\.0\.0\.1\:1317/https\:\/\/rest\-tropos\.thestratos\.org/
 ```
 
 ```
-vim config/config.conf
+vim configs/config.conf
 ```
 
 ```
