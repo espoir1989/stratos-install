@@ -3,7 +3,7 @@ Description=Stratos SDS node
 After=network-online.target
 
 [Service]
-User=stratos
+User=root
 ExecStart=/usr/bin/ppd start -r /home/rsnode
 Restart=on-failure
 RestartSec=3

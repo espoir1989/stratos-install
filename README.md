@@ -128,21 +128,21 @@ service运行
 wget https://raw.githubusercontent.com/espoir1989/stratos-install/main/sds.service
 mv sds.service
 systemctl daemon-reload
-systemctl enable stratos.service
-systemctl start stratos.service
+systemctl enable sds.service
+systemctl start sds.service
 ```
 
 检查运行状况
 ```
-systemctl status stratos.service
+systemctl status sds.service
 ```
 查看日志
 ```
-journalctl -u stratos.service -f 
+journalctl -u sds.service -f 
 ```
 停止服务
 ```
-systemctl stop stratos.service
+systemctl stop sds.service
 ```
 
 修改配置
@@ -152,7 +152,7 @@ Description=Stratos SDS node
 After=network-online.target
 
 [Service]
-User=stratos
+User=root
 ExecStart=/usr/bin/ppd start -r /home/rsnode #根据实际需求修改
 Restart=on-failure
 RestartSec=3
