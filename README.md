@@ -123,6 +123,45 @@ screen -r rsnode 恢复前台
 ```
 后台运行也可以使用nohup，service，docker等方式
 
+service运行
+```
+wget https://raw.githubusercontent.com/espoir1989/stratos-install/main/sds.service
+mv sds.service
+systemctl daemon-reload
+systemctl enable stratos.service
+systemctl start stratos.service
+```
+
+检查运行状况
+```
+systemctl status stratos.service
+```
+查看日志
+```
+journalctl -u stratos.service -f 
+```
+停止服务
+```
+systemctl stop stratos.service
+```
+
+修改配置
+```
+[Unit]
+Description=Stratos SDS node
+After=network-online.target
+
+[Service]
+User=stratos
+ExecStart=/usr/bin/ppd start -r /home/rsnode #根据实际需求修改
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=8192
+
+[Install]
+WantedBy=multi-user.target
+```
+
 ##### 开始挖矿
 
 ```
