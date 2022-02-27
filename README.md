@@ -188,8 +188,14 @@ startmining
 ```
 ###### 日志输出端口后，运行成功
 
-##### 查看收益
+
+#### 查看质押情况
+```
+https://rest-tropos.thestratos.org/register/staking/owner/钱包地址
+```
+
+#### 查看收益
 
 ```
-https://rest-tropos.thestratos.org/pot/rewards/钱包地址
+https://rest-tropos.thestratos.org/pot/rewards/wallet/钱包地址
 ```
