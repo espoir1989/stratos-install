@@ -87,7 +87,7 @@ SPList:
 ```
 
 ```
- ChainId: tropos-1
+ ChainId: tropos-2
 ```
 
 ``` 根据实际情况修改
@@ -129,7 +129,7 @@ ppd start 2>&1 >> sds.log &
 service运行
 ```
 wget https://raw.githubusercontent.com/espoir1989/stratos-install/main/sds.service
-mv sds.service
+mv sds.service /lib/systemd/system/
 systemctl daemon-reload
 systemctl enable sds.service
 systemctl start sds.service
