@@ -48,7 +48,7 @@ apt install git make gcc vim -y
 ```
 git clone https://github.com/stratosnet/sds.git
 cd sds
-git checkout v0.5.0
+git checkout v0.5.1
 ```
 
 ##### 编译
