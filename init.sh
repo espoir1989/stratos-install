@@ -7,7 +7,7 @@ apt install git make gcc -y
 
 git clone https://github.com/stratosnet/sds.git
 cd sds
-git checkout v0.5.0
+git checkout v0.7.0
 
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.cn,direct
