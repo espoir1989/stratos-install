@@ -20,20 +20,6 @@ wget https://raw.githubusercontent.com/espoir1989/stratos-install/main/init.sh
 sh init.sh
 ```
 
-##### 二进制安装
-
-下载
-```
-wget https://shrill-pond-3e81.hunsh.workers.dev/https://raw.githubusercontent.com/espoir1989/stratos-install/main/ppd -O /usr/bin/ppd
-chmod -R 777 /usr/bin/ppd
-```
-
-校验
-```
-md5sum /usr/bin/ppd
-b28dabdfe8f7d7fa2fdcf50f011184ba  /usr/bin/ppd
-```
-
 ##### 基础环境安装
 
 ```
